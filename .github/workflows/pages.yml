@@ -1,0 +1,64 @@
+name: Update prices and deploy Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # 09:00 in Helsinki in winter, 10:00 in summer. GitHub may delay runs.
+    - cron: '0 7 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test price extraction
+        run: node --test
+      - name: Refresh public menu
+        id: prices
+        continue-on-error: true
+        run: node scripts/update.mjs
+      - name: Retain latest check and result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/venues.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update daily menu check"
+            git push origin HEAD:main
+          fi
+      - name: Build static site
+        run: node scripts/build.mjs
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Report failed source check
+        if: steps.prices.outcome == 'failure'
+        run: echo '::warning::Price check failed. Publishing the previous observation and the failure status.'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
