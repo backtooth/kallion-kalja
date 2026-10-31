@@ -1,0 +1,86 @@
+{
+  "lastAttemptAt": "2026-10-31T12:35:07.759Z",
+  "lastResult": "Snadi Pubin menu tarkistettu. Neljä historiallista hintaa odottaa uutta lähdettä.",
+  "venues": [
+    {
+      "id": "b12",
+      "name": "Kallion B12",
+      "address": "Vaasankatu 12",
+      "area": "Harju",
+      "price": 4.3,
+      "litres": null,
+      "beer": "Hanaolut",
+      "observedAt": "2025-04-30",
+      "checkedAt": null,
+      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
+      "sourceLabel": "Groteski · baarikierros",
+      "sourceKind": "article",
+      "note": "Annoskokoa ei mainita lähteessä."
+    },
+    {
+      "id": "virkavapaa",
+      "name": "Virkavapaa",
+      "address": "Kaarlenkatu 10 C",
+      "area": "Kallio",
+      "price": 5,
+      "litres": null,
+      "beer": "Hanaolut",
+      "observedAt": "2025-04-30",
+      "checkedAt": null,
+      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
+      "sourceLabel": "Groteski · baarikierros",
+      "sourceKind": "article",
+      "note": "Annoskokoa ei mainita lähteessä."
+    },
+    {
+      "id": "kurvitar",
+      "name": "Kurvitar",
+      "address": "Hämeentie 58–60",
+      "area": "Sörnäinen",
+      "price": 5.5,
+      "litres": 0.5,
+      "beer": "Hanaolut",
+      "observedAt": "2025-04-30",
+      "checkedAt": null,
+      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
+      "sourceLabel": "Groteski · baarikierros",
+      "sourceKind": "article",
+      "note": "Lähteessä myös 0,4 l / 4,80 €."
+    },
+    {
+      "id": "snadi",
+      "name": "Snadi Pub",
+      "address": "Kolmas linja 6",
+      "area": "Kallio",
+      "price": 5.8,
+      "litres": 0.5,
+      "beer": "Karhu III",
+      "observedAt": "2026-10-31",
+      "checkedAt": "2026-10-31T12:35:07.759Z",
+      "source": "https://snadipub.fi/fi/menu",
+      "sourceLabel": "Ravintolan oma menu",
+      "sourceKind": "menu",
+      "note": "Happy hour Ma–pe 15–18: 4,80 € / 0,5 l. Vertailussa normaalihinta.",
+      "happyHour": {
+        "price": 4.8,
+        "litres": 0.5,
+        "label": "Ma–pe 15–18"
+      }
+    },
+    {
+      "id": "ompu",
+      "name": "Om’pu",
+      "address": "Siltasaarenkatu 15",
+      "area": "Hakaniemi",
+      "price": 6,
+      "litres": 0.5,
+      "beer": "Hanaolut",
+      "observedAt": "2025-04-30",
+      "checkedAt": null,
+      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
+      "sourceLabel": "Groteski · baarikierros",
+      "sourceKind": "article",
+      "note": "Vertailussa 0,5 l annos; lähteessä myös 0,25 l."
+    }
+  ]
+}
