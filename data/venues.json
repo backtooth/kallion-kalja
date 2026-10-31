@@ -1,86 +1,341 @@
 {
-  "lastAttemptAt": "2026-10-31T12:42:08.492Z",
-  "lastResult": "Snadi Pubin menu tarkistettu. Neljä historiallista hintaa odottaa uutta lähdettä.",
+  "lastAttemptAt": "2026-10-31T12:58:56.521Z",
+  "lastResult": "13 Mapsista löydettyä paikkaa. 1 normaalihintaa vahvistettu tässä ajossa. 1 lähteen haku epäonnistui. Facebook-julkaisut vaativat käsintarkistuksen.",
   "venues": [
+    {
+      "id": "snadi",
+      "name": "Snadi Pub",
+      "address": "Kolmas linja 6",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/Snadi+Pub+Kallio/data=!4m7!3m6!1s0x46920bd51c0e5a13:0xe8c45c38e7aab6a6!8m2!3d60.1815358!4d24.9512633!16s%2Fg%2F11tdr51p86",
+      "website": "https://snadipub.fi/fi",
+      "sourcePages": [
+        "https://snadipub.fi/fi/menu"
+      ],
+      "parser": "snadi",
+      "price": 5.8,
+      "litres": 0.5,
+      "happyHour": {
+        "price": 4.8,
+        "litres": 0.5,
+        "label": "Ma–pe 15–18"
+      },
+      "beer": "Karhu III",
+      "source": "https://snadipub.fi/fi/menu",
+      "sourceLabel": "Ravintolan oma menu",
+      "sourceKind": "website",
+      "observedAt": "2026-10-31",
+      "checkedAt": "2026-10-31T12:58:56.521Z",
+      "serving": "draft",
+      "note": "Happy hour Ma–pe 15–18: 4,80 € / 0,5 l. Vertailussa normaalihinta.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://snadipub.fi/fi/menu",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_verified",
+          "message": "Normaalihinta ja annoskoko luettu omalta verkkosivulta."
+        }
+      ]
+    },
+    {
+      "id": "siltanen",
+      "name": "Siltanen",
+      "address": "Hämeentie 13 B",
+      "area": "Sörnäinen",
+      "mapsUrl": "https://www.google.com/maps/place/Ravintola+Siltanen/data=!4m7!3m6!1s0x4692097e72acad69:0xd9fbb52e0fdcf9ce!8m2!3d60.1841723!4d24.9602711!16s%2Fg%2F11gb3sdm3x",
+      "website": "https://siltanen.org/",
+      "sourcePages": [
+        "https://siltanen.org/"
+      ],
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://siltanen.org/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_missing",
+          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+        }
+      ]
+    },
+    {
+      "id": "sivukirjasto",
+      "name": "Sivukirjasto",
+      "address": "Fleminginkatu 5",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/Sivukirjasto/data=!4m7!3m6!1s0x4692097fe65349bb:0x4f13eb5cc507066a!8m2!3d60.1843702!4d24.9532951!16s%2Fg%2F1tj7cq5_",
+      "website": "https://www.sivukirjasto.fi/",
+      "sourcePages": [
+        "https://www.sivukirjasto.fi/listat"
+      ],
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://www.sivukirjasto.fi/listat",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_missing",
+          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+        }
+      ]
+    },
+    {
+      "id": "brewster",
+      "name": "Brewster Bar / Kallio",
+      "address": "Neljäs linja 2",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/Brewster+Bar+%2F+Kallio/data=!4m7!3m6!1s0x4692097ffce71ab3:0x35cfe523e6c50010!8m2!3d60.1817197!4d24.9536922!16s%2Fg%2F11cjp795nm",
+      "website": "https://brewsterbar.fi/",
+      "sourcePages": [
+        "https://brewsterbar.fi/"
+      ],
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://brewsterbar.fi/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_missing",
+          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+        }
+      ]
+    },
+    {
+      "id": "street",
+      "name": "Street Bar",
+      "address": "Hämeentie 10",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/Street+Bar/data=!4m7!3m6!1s0x46920bd5aa0f7b5d:0xf669d920f47067a1!8m2!3d60.1811727!4d24.953007!16s%2Fg%2F11h9z_12lf",
+      "website": "https://streetbarkallio.fi/",
+      "sourcePages": [
+        "https://streetbarkallio.fi/menu/"
+      ],
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://streetbarkallio.fi/menu/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_missing",
+          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+        }
+      ]
+    },
+    {
+      "id": "makikupla",
+      "name": "Mäkikupla",
+      "address": "Torkkelinkatu 2",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/M%C3%A4kikupla/data=!4m7!3m6!1s0x4692097ef6a6aaab:0xbf0ef96422c5ae98!8m2!3d60.1858989!4d24.960189!16s%2Fg%2F11j00shfq6",
+      "website": "https://makikupla.com/",
+      "sourcePages": [
+        "https://makikupla.com/ruokalista"
+      ],
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://makikupla.com/ruokalista",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "status": "fetch_error",
+          "message": "Lähteeseen ei saatu yhteyttä."
+        }
+      ]
+    },
+    {
+      "id": "lepakkomies",
+      "name": "Lepakkomies",
+      "address": "Helsinginkatu 1",
+      "area": "Sörnäinen",
+      "mapsUrl": "https://www.google.com/maps/place/Lepakkomies/data=!4m7!3m6!1s0x4692097f272c3c4b:0x16d65db8018f60a4!8m2!3d60.1877054!4d24.9595256!16s%2Fg%2F1tnpjnt4",
+      "website": "https://lepis.fi/",
+      "sourcePages": [
+        "https://lepis.fi/"
+      ],
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://lepis.fi/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_missing",
+          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+        }
+      ]
+    },
+    {
+      "id": "roskapankki",
+      "name": "Roskapankki",
+      "address": "Helsinginkatu 20",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/Ravintola+Roskapankki/data=!4m7!3m6!1s0x469209802e9d5d61:0x64010cf5ce4c8477!8m2!3d60.1867873!4d24.9518524!16s%2Fg%2F1tfw1ps9",
+      "website": null,
+      "facebook": "https://www.facebook.com/p/Soittoruokala-Roskapankki-100090202548269/",
+      "websiteSearchNote": "Erillistä omaa verkkosivustoa ei löytynyt Maps- ja verkkohauissa 31.10.2026.",
+      "manualReview": {
+        "date": "2026-10-31",
+        "result": "Julkisissa näkyvissä julkaisuissa aukiolo- ja terassitiedotteita. Vahvistettavaa tuoppihintaa ei löytynyt."
+      },
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "facebook",
+          "url": "https://www.facebook.com/p/Soittoruokala-Roskapankki-100090202548269/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "manual_review",
+          "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
+        }
+      ]
+    },
+    {
+      "id": "iltakoulu",
+      "name": "Iltakoulu",
+      "address": "Vaasankatu 5",
+      "area": "Harju",
+      "mapsUrl": "https://www.google.com/maps/place/Ravintola+Iltakoulu/data=!4m7!3m6!1s0x4692097f29791175:0x520c787ae55563e3!8m2!3d60.1883476!4d24.9603371!16s%2Fg%2F1wc2_xft",
+      "website": null,
+      "facebook": "https://www.facebook.com/pages/Ravintola-Iltakoulu/194377463938245",
+      "websiteSearchNote": "Erillistä omaa verkkosivustoa ei löytynyt Maps- ja verkkohauissa 31.10.2026.",
+      "facebookVerified": false,
+      "manualReview": {
+        "date": "2026-10-31",
+        "result": "Löytynyt Facebook-paikkasivu on epävirallinen, eikä kelpaa ravintolan omaksi hintalähteeksi. Sivulla mainittua vanhaa verkkotunnusta ei saatu avattua."
+      },
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "facebook",
+          "url": "https://www.facebook.com/pages/Ravintola-Iltakoulu/194377463938245",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "status": "source_unverified",
+          "message": "Löytynyt Facebook-paikkasivu on epävirallinen. Sitä ei käytetä ravintolan omana hintalähteenä."
+        }
+      ]
+    },
+    {
+      "id": "gateh11",
+      "name": "Gate H11",
+      "address": "Helsinginkatu 11",
+      "area": "Kallio",
+      "mapsUrl": "https://www.google.com/maps/place/Gate+H11/data=!4m7!3m6!1s0x4692097f6c639eb1:0x5ac03e376e0d8205!8m2!3d60.187437!4d24.9563456!16s%2Fg%2F11hbbyg27y",
+      "website": "https://www.gateh11.fi/",
+      "sourcePages": [
+        "https://www.gateh11.fi/happyhours/",
+        "https://www.gateh11.fi/drinkkilista/"
+      ],
+      "parser": "gateh11",
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "website",
+          "url": "https://www.gateh11.fi/happyhours/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "offer": {
+            "beer": "Aura",
+            "price": 4.8,
+            "litres": null,
+            "label": "Su–to 16–20, pe–la 15–20",
+            "type": "happy_hour"
+          },
+          "status": "offer_only",
+          "message": "Vain happy hour -hinta. Annoskoko puuttuu; ei normaalihintavertailuun."
+        },
+        {
+          "kind": "website",
+          "url": "https://www.gateh11.fi/drinkkilista/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "price_missing",
+          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+        }
+      ]
+    },
     {
       "id": "b12",
       "name": "Kallion B12",
       "address": "Vaasankatu 12",
       "area": "Harju",
-      "price": 4.3,
-      "litres": null,
-      "beer": "Hanaolut",
-      "observedAt": "2025-04-30",
-      "checkedAt": null,
-      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
-      "sourceLabel": "Groteski · baarikierros",
-      "sourceKind": "article",
-      "note": "Annoskokoa ei mainita lähteessä."
+      "mapsUrl": "https://www.google.com/maps/place/Bar+Kallion+B12/@60.1883126,24.9538712,17z/data=!3m1!4b1!4m6!3m5!1s0x469209b6573ad6a7:0x4f2469e177a93f9!8m2!3d60.1883126!4d24.9564461!16s%2Fg%2F11gb3m60s4",
+      "website": null,
+      "facebook": "https://www.facebook.com/kallionB12/",
+      "manualReview": {
+        "date": "2026-10-31",
+        "result": "Uusimmat näkyvät julkiset julkaisut vuodelta 2023. Tuoretta tuoppihintaa ei löytynyt."
+      },
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "facebook",
+          "url": "https://www.facebook.com/kallionB12/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "manual_review",
+          "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
+        }
+      ]
     },
     {
       "id": "virkavapaa",
       "name": "Virkavapaa",
       "address": "Kaarlenkatu 10 C",
       "area": "Kallio",
-      "price": 5,
-      "litres": null,
-      "beer": "Hanaolut",
-      "observedAt": "2025-04-30",
-      "checkedAt": null,
-      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
-      "sourceLabel": "Groteski · baarikierros",
-      "sourceKind": "article",
-      "note": "Annoskokoa ei mainita lähteessä."
+      "mapsUrl": "https://www.google.com/maps/place/Virkavapaa+Bar/@60.1859936,24.9486598,17z/data=!3m1!4b1!4m6!3m5!1s0x469209802251d63d:0x3cf7cf364e532bd7!8m2!3d60.1859936!4d24.9512347!16s%2Fg%2F11dyzd1v1k",
+      "website": null,
+      "facebook": "https://www.facebook.com/virkavapaabaari/",
+      "manualReview": {
+        "date": "2026-10-31",
+        "result": "Julkisia julkaisuja voitiin lukea selaimella. Näkyvissä avautumis- ja remonttitiedotteita, ei tuoretta tuoppihintaa."
+      },
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "facebook",
+          "url": "https://www.facebook.com/virkavapaabaari/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "manual_review",
+          "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
+        }
+      ]
     },
     {
       "id": "kurvitar",
       "name": "Kurvitar",
       "address": "Hämeentie 58–60",
       "area": "Sörnäinen",
-      "price": 5.5,
-      "litres": 0.5,
-      "beer": "Hanaolut",
-      "observedAt": "2025-04-30",
-      "checkedAt": null,
-      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
-      "sourceLabel": "Groteski · baarikierros",
-      "sourceKind": "article",
-      "note": "Lähteessä myös 0,4 l / 4,80 €."
-    },
-    {
-      "id": "snadi",
-      "name": "Snadi Pub",
-      "address": "Kolmas linja 6",
-      "area": "Kallio",
-      "price": 5.8,
-      "litres": 0.5,
-      "beer": "Karhu III",
-      "observedAt": "2026-10-31",
-      "checkedAt": "2026-10-31T12:42:08.492Z",
-      "source": "https://snadipub.fi/fi/menu",
-      "sourceLabel": "Ravintolan oma menu",
-      "sourceKind": "menu",
-      "note": "Happy hour Ma–pe 15–18: 4,80 € / 0,5 l. Vertailussa normaalihinta.",
-      "happyHour": {
-        "price": 4.8,
-        "litres": 0.5,
-        "label": "Ma–pe 15–18"
-      }
-    },
-    {
-      "id": "ompu",
-      "name": "Om’pu",
-      "address": "Siltasaarenkatu 15",
-      "area": "Hakaniemi",
-      "price": 6,
-      "litres": 0.5,
-      "beer": "Hanaolut",
-      "observedAt": "2025-04-30",
-      "checkedAt": null,
-      "source": "https://www.groteski-magazine.fi/2025/04/30/groteski-testaa-helsingin-halvimmat-baarit/",
-      "sourceLabel": "Groteski · baarikierros",
-      "sourceKind": "article",
-      "note": "Vertailussa 0,5 l annos; lähteessä myös 0,25 l."
+      "mapsUrl": "https://www.google.com/maps/place/Kurvitar/@60.1884271,24.960744,17z/data=!3m2!4b1!5s0x4692097934f439d7:0x60f6a961f2b0d8e4!4m6!3m5!1s0x4692097934d4149d:0x11bf6f868e2ad65c!8m2!3d60.1884271!4d24.9633189!16s%2Fg%2F11bxb44m04",
+      "website": null,
+      "facebook": "https://www.facebook.com/ravintolakurvitar/",
+      "manualReview": {
+        "date": "2026-10-31",
+        "result": "Facebook vaatii kirjautumisen ikärajoitettuun sisältöön. Hintaa ei vahvistettu."
+      },
+      "note": "Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.",
+      "sourceChecks": [
+        {
+          "kind": "facebook",
+          "url": "https://www.facebook.com/ravintolakurvitar/",
+          "attemptedAt": "2026-10-31T12:58:56.521Z",
+          "fetchedAt": "2026-10-31T12:58:56.521Z",
+          "status": "manual_review",
+          "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
+        }
+      ]
     }
-  ]
+  ],
+  "discovery": {
+    "date": "2026-10-31",
+    "url": "https://www.google.com/maps/search/baarit+Kallio+Helsinki/",
+    "method": "google_maps_manual",
+    "note": "Paikat koottu Google Mapsista käsin. Uusia paikkoja ei löydetä päivittäisessä ajossa automaattisesti."
+  }
 }

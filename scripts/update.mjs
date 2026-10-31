@@ -1,19 +1,29 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
-import {parseSnadi} from './parsers.mjs';
+import {checkPlace} from './sources.mjs';
 const data=JSON.parse(await readFile('data/venues.json','utf8'));
-const now=new Date().toISOString(); data.lastAttemptAt=now;
-try {
-  const venue=data.venues.find(v=>v.id==='snadi');
-  const response=await fetch(venue.source,{signal:AbortSignal.timeout(20000),headers:{'User-Agent':'KallionKalja/1.0 (public menu price check)'}});
-  if(!response.ok) throw new Error(`Menu vastasi HTTP ${response.status}`);
-  const parsed=parseSnadi(await response.text());
-  Object.assign(venue,parsed,{checkedAt:now,observedAt:now.slice(0,10)});
-  venue.note=parsed.happyHour?`Happy hour ${parsed.happyHour.label}: ${parsed.happyHour.price.toFixed(2).replace('.',',')} € / 0,5 l. Vertailussa normaalihinta.`:'Vertailussa normaalihinta. Happy hour -hintaa ei vahvistettu.';
-  data.lastResult='Snadi Pubin menu tarkistettu. Neljä historiallista hintaa odottaa uutta lähdettä.';
-}catch(error){
-  data.lastResult=`Päivitys epäonnistui: ${error.message} Edellinen hintahavainto säilytettiin.`;
-  process.exitCode=1;
+const registry=JSON.parse(await readFile('data/places.json','utf8'));
+const now=new Date().toISOString(),venues=[];
+let verified=0,errors=0;
+for(let i=0;i<registry.places.length;i+=3){
+  const results=await Promise.all(registry.places.slice(i,i+3).map(async place=>{
+    const previous=data.venues.find(v=>v.id===place.id);
+    const result=await checkPlace(place,{now});
+    if(result.price)verified++;
+    errors+=result.checks.filter(c=>c.status==='fetch_error').length;
+    const previousPrice=previous&&['website','facebook','menu'].includes(previous.sourceKind)?{
+      price:previous.price,litres:previous.litres,beer:previous.beer,source:previous.source,sourceLabel:previous.sourceLabel,sourceKind:previous.sourceKind,observedAt:previous.observedAt,checkedAt:previous.checkedAt,serving:previous.serving||'draft',happyHour:previous.happyHour||null
+    }:{};
+    const price=result.price||previousPrice;
+    const note=price.happyHour?`Happy hour ${price.happyHour.label}: ${price.happyHour.price.toFixed(2).replace('.',',')} € / ${String(price.happyHour.litres).replace('.',',')} l. Vertailussa normaalihinta.`:result.price?'Vertailussa ravintolan oma normaalihinta.':previousPrice.price?'Viimeisin hintahavainto säilytetty. Uusi tarkistus ei vahvistanut hintaa.':'Tuoppihinta odottaa vahvistusta ravintolan omasta lähteestä.';
+    return {...place,...price,note,sourceChecks:result.checks};
+  }));
+  venues.push(...results);
 }
+data.venues=venues;
+data.discovery={date:registry.discoveredAt,url:registry.discoveryUrl,method:registry.discoveryMethod,note:registry.discoveryNote};
+data.lastAttemptAt=now;
+data.lastResult=`${venues.length} Mapsista löydettyä paikkaa. ${verified} normaalihintaa vahvistettu tässä ajossa. ${errors} lähteen haku epäonnistui. Facebook-julkaisut vaativat käsintarkistuksen.`;
 await writeFile('data/venues.json.tmp',JSON.stringify(data,null,2)+'\n');
 await rename('data/venues.json.tmp','data/venues.json');
 console.log(data.lastResult);
+if(errors)process.exitCode=1;

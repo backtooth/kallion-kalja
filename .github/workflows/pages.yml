@@ -27,7 +27,7 @@ jobs:
           node-version: '24'
       - name: Test price extraction
         run: node --test
-      - name: Refresh public menu
+      - name: Check restaurant websites and Facebook fallback sources
         id: prices
         continue-on-error: true
         run: node scripts/update.mjs
@@ -47,7 +47,7 @@ jobs:
           path: dist
       - name: Report failed source check
         if: steps.prices.outcome == 'failure'
-        run: echo '::warning::Price check failed. Publishing the previous observation and the failure status.'
+        run: echo '::warning::Some restaurant sources could not be fetched. See per-source statuses on the site. Previous price dates are preserved.'
 
   deploy:
     needs: build
