@@ -1,6 +1,6 @@
 {
-  "lastAttemptAt": "2026-11-06T14:49:34.020Z",
-  "lastResult": "13 Mapsista löydettyä paikkaa. 1 normaalihintaa vahvistettu tässä ajossa. 1 lähteen haku epäonnistui. Facebook-julkaisut vaativat käsintarkistuksen.",
+  "lastAttemptAt": "2026-11-07T13:46:18.254Z",
+  "lastResult": "13 Mapsista löydettyä paikkaa. 1 normaalihintaa vahvistettu tässä ajossa. 2 lähteen haku epäonnistui. Facebook-julkaisut vaativat käsintarkistuksen.",
   "venues": [
     {
       "id": "snadi",
@@ -24,16 +24,16 @@
       "source": "https://snadipub.fi/fi/menu",
       "sourceLabel": "Ravintolan oma menu",
       "sourceKind": "website",
-      "observedAt": "2026-11-06",
-      "checkedAt": "2026-11-06T14:49:34.020Z",
+      "observedAt": "2026-11-07",
+      "checkedAt": "2026-11-07T13:46:18.254Z",
       "serving": "draft",
       "note": "Happy hour Ma–pe 15–18: 4,80 € / 0,5 l. Vertailussa normaalihinta.",
       "sourceChecks": [
         {
           "kind": "website",
           "url": "https://snadipub.fi/fi/menu",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "price_verified",
           "message": "Normaalihinta ja annoskoko luettu omalta verkkosivulta."
         }
@@ -54,8 +54,8 @@
         {
           "kind": "website",
           "url": "https://siltanen.org/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "price_missing",
           "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
         }
@@ -76,10 +76,9 @@
         {
           "kind": "website",
           "url": "https://www.sivukirjasto.fi/listat",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
-          "status": "price_missing",
-          "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "status": "fetch_error",
+          "message": "Lähteeseen ei saatu yhteyttä."
         }
       ]
     },
@@ -98,8 +97,8 @@
         {
           "kind": "website",
           "url": "https://brewsterbar.fi/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "price_missing",
           "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
         }
@@ -120,8 +119,8 @@
         {
           "kind": "website",
           "url": "https://streetbarkallio.fi/menu/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "price_missing",
           "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
         }
@@ -142,7 +141,7 @@
         {
           "kind": "website",
           "url": "https://makikupla.com/ruokalista",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
           "status": "fetch_error",
           "message": "Lähteeseen ei saatu yhteyttä."
         }
@@ -163,8 +162,8 @@
         {
           "kind": "website",
           "url": "https://lepis.fi/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "price_missing",
           "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
         }
@@ -188,8 +187,8 @@
         {
           "kind": "facebook",
           "url": "https://www.facebook.com/p/Soittoruokala-Roskapankki-100090202548269/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "manual_review",
           "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
         }
@@ -214,7 +213,7 @@
         {
           "kind": "facebook",
           "url": "https://www.facebook.com/pages/Ravintola-Iltakoulu/194377463938245",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
           "status": "source_unverified",
           "message": "Löytynyt Facebook-paikkasivu on epävirallinen. Sitä ei käytetä ravintolan omana hintalähteenä."
         }
@@ -237,8 +236,8 @@
         {
           "kind": "website",
           "url": "https://www.gateh11.fi/happyhours/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "offer": {
             "beer": "Aura",
             "price": 4.8,
@@ -252,8 +251,8 @@
         {
           "kind": "website",
           "url": "https://www.gateh11.fi/drinkkilista/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "price_missing",
           "message": "Sivu haettu, mutta yksiselitteistä hanaoluen normaalihintaa ja annoskokoa ei löytynyt. Kuva-, PDF- ja JavaScript-menut voivat vaatia käsintarkistuksen."
         }
@@ -276,8 +275,8 @@
         {
           "kind": "facebook",
           "url": "https://www.facebook.com/kallionB12/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "manual_review",
           "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
         }
@@ -300,8 +299,8 @@
         {
           "kind": "facebook",
           "url": "https://www.facebook.com/virkavapaabaari/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "manual_review",
           "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
         }
@@ -324,8 +323,8 @@
         {
           "kind": "facebook",
           "url": "https://www.facebook.com/ravintolakurvitar/",
-          "attemptedAt": "2026-11-06T14:49:34.020Z",
-          "fetchedAt": "2026-11-06T14:49:34.020Z",
+          "attemptedAt": "2026-11-07T13:46:18.254Z",
+          "fetchedAt": "2026-11-07T13:46:18.254Z",
           "status": "manual_review",
           "message": "Facebookin julkaisuja ei voitu vahvistaa automaattisesti. Tarkista sivu selaimella."
         }
